@@ -1,0 +1,16 @@
+{
+  "extends": "fastify-tsconfig",
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules"],
+  "compilerOptions": {
+    "outDir": "dist",
+    "sourceMap": true,
+    "baseUrl": "./src",
+    "paths": {
+      "@/*": ["*"],
+      "@routes/*": ["routes/*"],
+      "@services/*": ["services/*"],
+      "@types_local/*": ["types/*"]
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "tabWidth": 2,
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "parser": "typescript",
+  "overrides": [
+    {
+      "files": ["*.json"],
+      "options": {
+        "parser": "json"
+      }
+    },
+    {
+      "files": ["*.css", "*.scss", "*.sass"],
+      "options": {
+        "parser": "scss"
+      }
+    },
+    {
+      "files": ["*.yml", "*.yaml"],
+      "options": {
+        "singleQuote": false,
+        "parser": "yaml"
+      }
+    },
+    {
+      "files": ["*.md"],
+      "options": {
+        "semi": false,
+        "parser": "markdown"
+      }
+    },
+    {
+      "files": ["*.mdx"],
+      "options": {
+        "parser": "mdx"
+      }
+    }
+  ]
+}
