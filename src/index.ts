@@ -29,9 +29,6 @@ const server = fastify({
 
 server.register(app);
 
-server.listen(config.PORT || 3000, '0.0.0.0', async (err: any) => {
-  if (err) {
-    server.log.error(err);
-    process.exit(1);
-  }
+server.listen({
+  port: config.PORT || 3000,
 });
